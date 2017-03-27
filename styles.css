@@ -1,0 +1,53 @@
+body {
+  background-color: #F4F4F4;
+}
+h1, p {
+  font-size: 18px;
+  color: #565656;
+}
+#name {
+  font-size: 35px;
+  margin-top: 2px;
+  color: #76323F;
+}
+
+div#content {
+  background-color: #D7CEC7;
+  display: block;
+  overflow: auto;
+  padding: 2.5%;
+  max-width: 60%;
+  margin:auto;
+  position: relative;
+}
+img#picture_of_me {
+  float: right;
+  width: 40%;
+  height: 40%;
+}
+div#text {
+  float: left;
+  width: 40%;
+  display: block;
+  height: 100%;
+}
+span#links {
+  position: absolute;
+  padding: inherit; /*#links stays inside #content padding*/
+  bottom: 0; /*moves to bottom left of #content*/
+  left: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+  margin-right: 16px;
+  padding: 20px; /*half of size, otherwise padding is to center of img*/
+}
+img.logo {
+  width: 40px;
+}
