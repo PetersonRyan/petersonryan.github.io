@@ -28,6 +28,7 @@ div#content {
   display: block;
   overflow: auto;
   padding: 2.5%;
+  min-height: 240px;
   min-width: 550px;
   max-width: 800px;
   margin:auto;
