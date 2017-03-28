@@ -1,77 +1,77 @@
 body {
-  background-color: #F4F4F4;
+   background-color: #F4F4F4;
 }
 h1, p {
-  font-size: 18px;
-  color: #565656;
+   font-size: 18px;
+   color: #565656;
 }
 a {
-   color: #565656;
-   font-size: 32px;
-   text-decoration: none;
+    color: #565656;
+    font-size: 32px;
+    text-decoration: none;
 }
 a:hover{
-   color: #262626;
+    color: #262626;
 }
 .additional-info{
-   margin-bottom: 8px;
-   display: inline-block;
+    margin-bottom: 8px;
+    display: inline-block;
 }
 #name {
-  font-size: 35px;
-  margin-top: 2px;
-  color: #76323F;
+   font-size: 35px;
+   margin-top: 2px;
+   color: #76323F;
 }
 
 div#content {
-  background-color: #D7CEC7;
-  display: block;
-  overflow: auto;
-  padding: 2.5%;
-  min-height: 240px;
-  min-width: 550px;
-  max-width: 800px;
-  margin:auto;
-  position: relative;
+   background-color: #D7CEC7;
+   display: block;
+   overflow: auto;
+   padding: 2.5%;
+   min-height: 240px;
+   min-width: 550px;
+   max-width: 800px;
+   margin:auto;
+   position: relative;
 }
 img#picture_of_me {
-  float: right;
-  width: 40%;
-  height: 40%;
+   float: right;
+   width: 40%;
+   height: 40%;
 }
 div#text {
-  float: left;
-  width: 40%;
-  display: block;
-  height: 100%;
+   float: left;
+   width: 40%;
+   display: block;
+   height: 100%;
 }
 span#links {
-  position: absolute;
-  padding: inherit; /*#links stays inside #content padding*/
-  bottom: 0; /*moves to bottom left of #content*/
-  left: 0;
-}
-ul { /*list for image links*/
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-li { /*list items for image links*/
-  float: left;
-  padding-left: 15px; /*half of size, otherwise padding is to center of img*/
-  padding-bottom: 15px; /*half of size, otherwise padding is to center of img*/
-}
-img.logo {
-  width: 30px;
-}
-div.bottom {
-   margin: 2px;
    position: absolute;
-   bottom: 0;
+   padding: inherit; /*#links stays inside #content padding*/
+   bottom: 0; /*moves to bottom left of #content*/
    left: 0;
 }
+ul { /*list for image links*/
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+li { /*list items for image links*/
+   float: left;
+   padding-left: 15px; /*half of size, otherwise padding is to center of img*/
+   padding-bottom: 15px; /*half of size, otherwise padding is to center of img*/
+}
+img.logo {
+   width: 30px;
+}
+div.bottom {
+    margin: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .bottom p, a{
-   font-size: 14px;
-   margin: 2px;
+    font-size: 14px;
+    margin: 2px;
 }
