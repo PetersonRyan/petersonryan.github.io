@@ -29,8 +29,7 @@ a:hover{
    margin-bottom: 8px;
    display: inline-block;
 }
-
-div.section_even { /*Applies to even div sections (0,2,4,...)*/
+div.section_top { /*Applies to div section at the top of the page*/
    background-color: var(--div-background-colour-even);
    display: block;
    overflow: auto;
@@ -41,18 +40,7 @@ div.section_even { /*Applies to even div sections (0,2,4,...)*/
    margin:auto;
    position: relative;
 }
-div.section_odd {
-   background-color: var(--div-background-colour-even);
-   display: block;
-   overflow: auto;
-   padding: 2.5%;
-   min-height: 240px;
-   min-width: 550px;
-   max-width: 800px;
-   margin:auto;
-   position: relative;
-}
-div.section_addition {
+div.section_addition { /*Applies to div sections that are added below a section_top div*/
   background-color: var(--div-background-colour-odd);
   display: block;
   overflow: auto;
@@ -96,10 +84,14 @@ ul { /*list for image links*/
    padding: 0;
    overflow: hidden;
 }
-li { /*list items for image links*/
+li.in_text_menu{ /*list items for image links*/
    float: left;
-   padding-left: 15px; /*half of size, otherwise padding is to center of img*/
-   padding-bottom: 15px; /*half of size, otherwise padding is to center of img*/
+   padding-right: 15px; /*half of size, otherwise padding is to center of img*/
+}
+li.home_menu {
+  float: left;
+  padding-left: 15px; /*half of size, otherwise padding is to center of img*/
+  padding-bottom: 15px; /*half of size, otherwise padding is to center of img*/
 }
 img.logo {
    width: auto;
