@@ -2,50 +2,62 @@
 <html>
 <head>
    <title>Ryan Peterson</title>
+
+   <!-- Bootstrap v4 -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="content">
-  <div class="section_top" id="divsection0">
-     <div class="text_block text_even_onleft" id="section_0_text">
-        <h1 class="titles">Ryan Peterson</h1>
-        <p>Software Engineer</p>
-        <p style="border-bottom: solid #808080 1px"></p>
-        <a class="additional-info" href="Resume.pdf">View resume</a>
-        <br/>
-        <a class="additional-info" href="mailto:repeters@sfu.ca">Contact me: repeters@sfu.ca</a>
-        <br/>
-        <a class="additional-info" href="calculot.html">Calculot app</a>
 
-     </div>
-     <img class="imginblock_right" src="images/DSC_0024.jpg" alt="Me">
-     <span id="links"> <!-- image Links go here -->
-        <ul>
-           <li class="home_menu">
-              <a href="https://linkedin.com/in/petersonryan97/" title="LinkedIn">
-                 <img class="logo" src="images/linkedin_logo.png" alt="LinkedIn" draggable="false">
-              </a>
-           </li>
-           <li class="home_menu">
-              <a href="https://github.com/PetersonRyan/" title="Github">
-                 <img class="logo" src="images/github_logo-white.png" alt="Github" draggable="false">
-              </a>
-           </li>
-        </ul>
-     </span>
-  </div>
+<div class="container">
+   <div class="row" id="business-card">
+      <div class="col-md-7" id="text-and-links">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="">Ryan Peterson</h1>
+               <p>Software Engineer</p>
+               <a class="" href="Resume.pdf">View resume</a>
+               <br/>
+               <a class="" href="mailto:repeters@sfu.ca">Contact me: repeters@sfu.ca</a>
+               <br/>
+               <a class="" href="calculot.html">Calculot app</a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12" id="external-links">
+               <a href="https://github.com/PetersonRyan"><i class="fa fa-github" aria-hidden="true"></i></a>
+               <a href="https://www.linkedin.com/in/peterson-ryan/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+         </div>
+
+
+      </div>
+      <div class="col-md-5">
+         <img class="" src="images/DSC_0024.jpg" alt="Me">
+      </div>
+   </div>
 </div>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-96662485-2');
-</script>
+<scripts>
+   <script src="https://use.fontawesome.com/937b789b12.js"></script>
 
+   <!-- Bootstrap & jQuery -->
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
+   <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-96662485-2');
+   </script>
+
+</scripts>
 
 </body>
 </html>
