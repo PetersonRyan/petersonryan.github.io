@@ -1,0 +1,115 @@
+:root{
+  --background-colour:#F4F4F4;
+  --div-background-colour-even:#D7CEC7;
+  --div-background-colour-odd:#e8ddd5;
+  --header-title-colour:#76323F;
+  --text-colour:#565656;
+  --text-hover:#262626;
+}
+body {
+  background-color: var(--background-colour);
+}
+p {
+  font-size: 18px;
+  color: var(--text-colour);
+}
+.titles{
+  margin-top: 2px;
+  color: var(--header-title-colour);
+}
+a {
+  color: var(--text-colour);
+  font-size: 32px;
+  text-decoration: none;
+}
+a:hover{
+  color: var(--text-hover);
+}
+.additional-info{
+  margin-bottom: 8px;
+  display: inline-block;
+}
+div.section_top { /*Applies to div section at the top of the page*/
+  background-color: var(--div-background-colour-even);
+  display: block;
+  overflow: auto;
+  padding: 2.5%;
+  min-height: 240px;
+  min-width: 550px;
+  max-width: 800px;
+  margin:auto;
+  position: relative;
+}
+div.section_addition { /*Applies to div sections that are added below a section_top div*/
+  background-color: var(--div-background-colour-odd);
+  display: block;
+  overflow: auto;
+  padding: 2.5%;
+  min-width: 550px;
+  max-width: 800px;
+  margin:auto;
+  position: relative;
+}
+img.imginblock_right {
+  float: right;
+  width: 40%;
+  height: 40%;
+}
+img.imginblock_left {
+  float: left;
+  width: 40%;
+  height: 40%;
+}
+div.text_block {
+  float: left;
+  width: 40%;
+  display: block;
+  height: 100%;
+}
+div.text_even_onleft {
+  float: left;
+
+}
+div.text_odd_onright {
+  float: right;
+}
+span#links {
+  position: absolute;
+  padding: inherit; /*#links stays inside #section_even padding*/
+  bottom: 0; /*moves to bottom left of #section_even*/
+  left: 0;
+}
+ul { /*list for image links*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li.in_text_menu{ /*list items for image links*/
+  float: left;
+  padding-right: 15px; /*half of size, otherwise padding is to center of img*/
+}
+li.home_menu {
+  float: left;
+  padding-left: 15px; /*half of size, otherwise padding is to center of img*/
+  padding-bottom: 15px; /*half of size, otherwise padding is to center of img*/
+}
+img.logo {
+  width: auto;
+  height: 30px;
+}
+img.android_screenshot{
+  padding: 4px;
+  width: 30%;
+  max-width: 1440px;
+}
+div.bottom {
+  margin: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bottom p, a{
+  font-size: 14px;
+  margin: 2px;
+}
