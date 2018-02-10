@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Ryan Peterson</title>
-   <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ryan Peterson</title>
+
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-<div id="content">
-  <div class="section_top" id="divsection0">
-     <div class="text_block text_even_onleft" id="section_0_text">
-        <h1 class="titles">Ryan Peterson</h1>
-        <p>Software Engineer</p>
-        <p style="border-bottom: solid #808080 1px"></p>
-        <a class="additional-info" href="Resume.pdf">View resume</a>
-        <br/>
-        <a class="additional-info" href="mailto:repeters@sfu.ca">Contact me: repeters@sfu.ca</a>
-        <br/>
-        <a class="additional-info" href="calculot.html">Calculot app</a>
 
-     </div>
-     <img class="imginblock_right" src="images/DSC_0024.jpg" alt="Me">
-     <span id="links"> <!-- image Links go here -->
-        <ul>
-           <li class="home_menu">
-              <a href="https://linkedin.com/in/petersonryan97/" title="LinkedIn">
-                 <img class="logo" src="images/linkedin_logo.png" alt="LinkedIn" draggable="false">
-              </a>
-           </li>
-           <li class="home_menu">
-              <a href="https://github.com/PetersonRyan/" title="Github">
-                 <img class="logo" src="images/github_logo-white.png" alt="Github" draggable="false">
-              </a>
-           </li>
-        </ul>
-     </span>
-  </div>
+<div class="container-fluid" id="banner">
+    <div class="row center-align">
+        <div class="col m4 offset-m4 s10 offset-s1">
+            <img src="images/DSC_0024.jpg" alt="Me" class="circle z-depth-3" id="profile-photo">
+            <h1 class="font-white">Ryan</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        <div class="row center-align fa-6x">
+            <div class="col m2 s4 offset-m3">
+                <i class="fab fa-github"></i>
+            </div>
+            <div class="col m2 s4">
+
+                <!--<i class="fas fa-caret-down"></i>-->
+                <i class="fas fa-caret-down" data-fa-transform="shrink-2.0" data-fa-mask="fas fa-circle"></i>
+            </div>
+            <div class="col m2 s4">
+                <!--<span class="fa-stack">-->
+                    <!--<i class="fas fa-circle fa-lg fa-stack-2x"></i>-->
+                <i class="fab fa-linkedin-in" data-fa-transform="shrink-6.0" data-fa-mask="fas fa-circle"></i>
+
+
+                <!--<i class="fab fa-linkedin-in font-white" data-fa-mask="fas fa-circle"></i>-->
+                <!--</span>-->
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<scripts>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-96662485-2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
+        gtag('js', new Date());
+
+        gtag('config', 'UA-96662485-2');
+    </script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+</scripts>
 
 </body>
 </html>
