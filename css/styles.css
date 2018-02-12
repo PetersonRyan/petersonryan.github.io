@@ -13,4 +13,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100; }
 
+.hide {
+  display: none !important; }
+
 /*# sourceMappingURL=styles.css.map */
