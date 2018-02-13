@@ -1,0 +1,27 @@
+
+.relative{
+  position: relative !important;
+}
+
+.absolute{
+  position: absolute !important;
+}
+
+.bottom{
+  bottom: 0;
+}
+
+.hide{
+  display: none !important;
+}
+
+.pop-in {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  transform: scale(0.1); /* 1/10 of the original size */
+  transition: all 1s ease-in-out;
+}
+.pop-in.opened {
+  transform: scale(1);
+}
