@@ -1,7 +1,7 @@
 @import "variables";
 
-#banner{
-  background-image: url("../images/banner.jpg");
+#full-first-section{
+  background-image: url("../images/banner-min.jpg");
   background-position: 40% 90%;
   background-size: cover;
   background-color: rgba(0,0,0,0.5);
@@ -12,6 +12,10 @@
   height: 100%;
 }
 
+#banner{
+  height: 100%;
+}
+
 #full-first-section{
   height: 100vh;
 }
@@ -19,4 +23,15 @@
 #link-section{
   background-color: $material-blue-light;
   height: 100%;
+}
+
+#banner-footer{
+  width: 100%;
+
+}
+
+.banner-footer a{
+  //font-size: 2em;
+  margin-right: 20px;
+  margin-left: 20px;
 }
