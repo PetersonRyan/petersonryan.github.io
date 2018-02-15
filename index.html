@@ -79,15 +79,18 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+        if (window.location.href.indexOf("localhost") < 0) {
+            console.log("Google analytics ON");
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
 
-        gtag('js', new Date());
+            gtag('js', new Date());
 
-        gtag('config', 'UA-96662485-2');
+            gtag('config', 'UA-96662485-2');
+        } else console.log("Google analytics OFF");
     </script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
