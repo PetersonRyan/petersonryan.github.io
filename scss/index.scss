@@ -24,6 +24,13 @@
   height: 100%;
 }
 
+.card-image{
+  #project-card-pickapart &{
+    background-image: url("../images/pickapart-card-banner.jpg");
+    background-position: 80% 70%;
+  }
+}
+
 #banner-footer{
   width: 100%;
 

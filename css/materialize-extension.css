@@ -1,2 +1,30 @@
-.btn-xl{width:70px;height:70px;line-height:70px}@media (min-width: 601px){.valign-wrapper-med-plus{display:flex;align-items:center}}
+.btn-xl {
+  width: 70px;
+  height: 70px;
+  line-height: 70px; }
+
+.card.project-card {
+  border-radius: 5px; }
+  .card.project-card .card-image img, .card.project-card .card-image {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .card.project-card .card-image {
+    height: 200px;
+    background-image: url("../images/calculot/calculot_icon.jpg");
+    background-position: 80% 70%;
+    background-size: cover; }
+  .card.project-card h2 {
+    color: blue; }
+
+.card-action.center-align a {
+  margin-right: 0 !important; }
+
+@media (min-width: 601px) {
+  /* Desktop only */
+  .valign-wrapper-med-plus {
+    display: flex;
+    align-items: center; } }
+@media (max-width: 601px) {
+  /* Mobile only */ }
+
 /*# sourceMappingURL=materialize-extension.css.map */
