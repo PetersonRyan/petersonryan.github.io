@@ -1,0 +1,197 @@
+#navbar-head{
+  height: 64px;
+  overflow: visible;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  .search{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    outline: none;
+  }
+
+  .row{
+    padding-top: 12px;
+  }
+
+  input{
+    padding-left: 20px;
+    outline: none;
+    margin: 0;
+    border-color: transparent;
+  }
+  .btn{
+    width: 100%;
+  }
+}
+
+img{
+  height: 400px ;
+}
+
+.card{
+  border-radius: 3px;
+  min-height: 474px;
+  .card-title{
+    font-size: 28px;
+    margin: 0;
+  }
+  .trail-properties{
+    margin-top: 3px;
+    margin-bottom: 12px;
+  }
+  .trail-conditions{
+    margin-top: 5px;
+    margin-bottom: 0;
+    .wi{
+      font-weight: 600;
+    }
+  }
+}
+
+#card-container{
+  padding-top: 85px;
+}
+
+#filter-row{
+  .btn{
+    width: 100%;
+  }
+}
+
+#search-button{
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.search{
+  position: relative;
+}
+
+.focus-card .display-big{
+  display: block !important;
+}
+
+.card-image{
+  background-image: url("https://www.vancouvertrails.com/images/hikes/mount-fromme.jpg");
+  background-position: center;
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  .exit-card{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    :hover{
+      text-shadow: white 5px 5px 5px;
+    }
+    .fa-circle{
+      //opacity: 0.5;
+    }
+  }
+}
+
+.display-big{
+  .row{
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.fa-repeat{
+  width: 0.36em !important;
+  height: 14px;
+  margin-bottom: 3px;
+  margin-right: 4px;
+}
+
+.card:not(.focus-card) {
+  .secondary-info{
+    position: absolute;
+    bottom: 24px
+  }
+  .card-image {
+    cursor: pointer;
+  }
+}
+
+.weather{
+  .wi {
+    font-size: 3em;
+    margin-bottom: 7px;
+  }
+  .condition{
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (min-width: 601px){ //Desktop
+  .focus-card{
+    width: 70%;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 600px){ //Mobile
+  .focus-card{
+    width: 100%;
+    //top: 0;
+  }
+
+}
+
+
+.focus-card{
+
+  z-index: 99;
+  position: fixed;
+
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+
+  //-webkit-transition: width 0.3s ease, margin 0.3s ease;
+  //-moz-transition: width 0.3s ease, margin 0.3s ease;
+  //-o-transition: width 0.3s ease, margin 0.3s ease;
+  //transition: width 0.3s ease, margin 0.3s ease;
+
+  transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  //transform-origin: 20% 40%;
+
+  > .display-big.show{
+    display: initial;
+  }
+  .card-title{
+    margin-bottom: 4px !important;
+  }
+
+  .card-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 150px;
+  }
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 97vh;
+
+}
+
+.card-container .row {
+  position: relative;
+  div{
+    -webkit-transition: width 0.3s ease, margin 0.3s ease;
+    -moz-transition: width 0.3s ease, margin 0.3s ease;
+    -o-transition: width 0.3s ease, margin 0.3s ease;
+    transition: width 0.3s ease, margin 0.3s ease;
+  }
+}
