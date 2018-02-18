@@ -1,0 +1,28 @@
+.bold{
+  font-weight: 400 !important;
+}
+
+.exit-card{
+  cursor: pointer;
+}
+
+.white{
+  color: #fff;
+}
+
+ul.horizontal-bullet-list{
+  li { list-style: none; display: inline; }
+  li:after { content: " \00b7"; }
+  li:last-child:after { content: none; }
+}
+
+ul.horizontal-spaced-list{
+  li { list-style: none; display: inline; }
+  li { padding-right: 10px; }
+  li:last-child:after { content: none; }
+}
+
+.display-big{
+  display: none;
+
+}
