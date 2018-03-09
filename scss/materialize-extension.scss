@@ -4,6 +4,25 @@
   line-height: 70px;
 }
 
+.card.project-card{
+  border-radius: 5px;
+  .card-image img, .card-image{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card-image{
+    height: 200px;
+    background-image: url("../images/calculot/calculot_icon.jpg");
+    background-position: 80% 70%;
+    background-size: cover;
+  }
+  h2{
+    color: blue;
+  }
+}
+
+.card-action.center-align a{ margin-right: 0 !important; }
+
 @media (min-width: 601px){ /* Desktop only */
   .valign-wrapper-med-plus {
     display: flex;
