@@ -6,7 +6,6 @@
     <title>Ryan Peterson</title>
 
     <link rel="stylesheet" href="materialize/css/materialize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/materialize-extension.css">
@@ -75,65 +74,20 @@
     </div>
 </div>
 
-<div class="container" id="project-section">
-    <div class="row">
-        <div class="col s12 m6 l4">
-            <div class="card project-card">
-                <a href="#" class="card-image">
-                    <div class="card-image"></div>
-                </a>
-                <div class="card-content">
-                    <div class="card-title">Calculot</div>
-                    <p>Some stuff about Calculot</p>
-                </div>
-                <div class="card-action center-align"><a href="#">Learn More</a></div>
-            </div>
-        </div>
-        <div class="col s12 m6 l4">
-            <div class="card project-card" id="project-card-pickapart">
-                <div class="card-image">
-
-                </div>
-                <div class="card-content">
-                    <div class="card-title">Pickapart Tracker</div>
-                    <p>A Python app to track the inventory of a local auto wreckers for any specified vehicle.</p>
-                </div>
-                <div class="card-action center-align"><a href="#">Learn More</a></div>
-            </div>
-        </div>
-        <div class="col s12 m6 l4">
-            <div class="card project-card" id="project-card-lifx">
-                <div class="card-image center-align valign-wrapper">
-                    <div class='orb'>
-                        <i class='far fa-lightbulb' aria-hidden='true'></i>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-title">LIFX Web</div>
-                    <p>Some stuff about Calculot</p>
-                </div>
-                <div class="card-action center-align"><a href="#">Learn More</a></div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <scripts>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96662485-2"></script>
     <script>
-        if (window.location.href.indexOf("localhost") < 0) {
-            window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-            gtag('js', new Date());
+        gtag('js', new Date());
 
-            gtag('config', 'UA-96662485-2');
-        } else console.log("Google analytics OFF");
+        gtag('config', 'UA-96662485-2');
     </script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
