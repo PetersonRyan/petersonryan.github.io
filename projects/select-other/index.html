@@ -10,7 +10,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
      <!--CDN Copy -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/PetersonRyan/select-other/master/dist/select-other.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.css">
 
 </head>
 <body style="padding-bottom: 100px;">
@@ -134,7 +134,6 @@
                 </select>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
                 <h2>Technical Notes</h2>
@@ -142,15 +141,44 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h4>How to use</h4>
-                <p>Download the CSS and JavaScript files from the dist folder on GitHub. <a href="https://github.com/PetersonRyan/select-other"><b>Link</b></a></p>
-                <p>jQuery is required to use this plugin. Ensure it is called before select-other.js</p>
-                <p>Simply import the CSS and JavaScript files to the page you would like to use it on. Then call it using any jQuery identifier. Like this:</p>
-                <span style="font-family: 'Courier New'; font-weight: bold; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px;">$(".your-class").selectOther();</span>
-                <br>
-                <br>
-                <p>The function selectOther takes an optional string as a parameter allowing you to set your trigger word for transforming the field. By default it is set to "Other".</p>
-                <p>If that word is not already in the options available, it will be added in.</p>
+                <h3>Installation</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>CDN</h4>
+                        <p>By using jsDelivr, select-other is available on demand for any website or web app</p>
+                        <p>Link the following JavaScript and CSS files in your HTML page. Be sure to place the JavaScript file <i>after</i> you've called jQuery.</p>
+                        <span style="font-family: 'Courier New'; font-weight: 700; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px; margin-bottom: 10px; display:inline-block;">
+                            &lt;<span style="color:#22863a;">link</span> <span style="color:#6f42c1;">rel</span>="stylesheet" <span style="color:#6f42c1;">href</span>="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.css"&gt;
+                        </span>
+                        <br>
+                        <span style="font-family: 'Courier New'; font-weight: bold; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px; margin-bottom: 10px; display:inline-block;">
+                            &lt;<span style="color:#22863a;">script</span> <span style="color:#6f42c1;">src</span>="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.min.js"&gt;&lt;/<span style="color:#22863a;">script</span>&gt;
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Manual Install</h4>
+                        <p>Download the JavaScript and CSS files from the dist folder on GitHub. <a href="https://github.com/PetersonRyan/select-other"><b>Link</b></a></p>
+                        <p>jQuery is required to use this plugin. Ensure it is called before select-other.js</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>How to use</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>After importing the JavaScript and CSS on the page you would liek to use it on, call it using any jQuery identifier. Like this:</p>
+                        <span style="font-family: 'Courier New'; font-weight: bold; background-color: rgb(230,230,230); padding: 8px; border-radius: 5px;">$(".your-class").selectOther();</span>
+                        <br>
+                        <br>
+                        <p>The function, selectOther, takes an optional string as a parameter allowing you to set your trigger word for transforming the field. By default it is set to "Other".</p>
+                        <p>If that word is not already in the options available, it will be added in.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
@@ -183,7 +211,7 @@
 
     <script src="jQuery.js"></script>
     <!-- CDN Copy -->
-    <script src="https://cdn.rawgit.com/PetersonRyan/select-other/master/dist/select-other.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/PetersonRyan/select-other@v1.0/dist/select-other.js"></script>
 
     <script>
         $("#fruit-selector").change(function(){
