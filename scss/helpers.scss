@@ -1,13 +1,13 @@
 
-.relative{
+.relative {
   position: relative !important;
 }
 
-.absolute{
+.absolute {
   position: absolute !important;
 }
 
-.bottom{
+.bottom {
   bottom: 0;
 }
 
@@ -22,6 +22,7 @@
   transform: scale(0.1); /* 1/10 of the original size */
   transition: all 1s ease-in-out;
 }
+
 .pop-in.opened {
   transform: scale(1);
 }
