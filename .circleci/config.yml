@@ -4,8 +4,7 @@ jobs:
     machine: true
 
     steps:
-      - run: echo "directory is $PWD"
-      - run: ls
+      - checkout
       - run: docker build -t personal/website:$CIRCLE_SHA1 .
 
 workflows:
