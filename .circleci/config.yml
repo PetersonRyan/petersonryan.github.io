@@ -6,6 +6,7 @@ jobs:
     working_directory: ~/tmp
 
     steps:
+      - run: cd ~/tmp
       - run: docker build -t personal/website:$CIRCLE_SHA1 .
 
 workflows:
