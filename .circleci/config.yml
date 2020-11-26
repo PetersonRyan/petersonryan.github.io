@@ -5,7 +5,9 @@ jobs:
 
     steps:
       - checkout
-      - run: docker build -t personal/website:$CIRCLE_SHA1 .
+      - run: docker build -t petersonryan/website:$CIRCLE_SHA1 .
+      - run: docker login -u petersonryan -p $DOCKERHUB_ACCESS_KEY
+      - run: docker push petersonryan/website:$CIRCLE_SHA1
 
 workflows:
   buildDocker:
