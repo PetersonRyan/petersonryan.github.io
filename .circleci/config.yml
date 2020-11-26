@@ -3,10 +3,9 @@ jobs:
   build_docker:
     machine: true
 
-    working_directory: ~/tmp
-
     steps:
-      - run: cd ~/tmp
+      - run: echo "directory is $PWD"
+      - run: ls
       - run: docker build -t personal/website:$CIRCLE_SHA1 .
 
 workflows:
