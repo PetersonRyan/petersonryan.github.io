@@ -17,7 +17,7 @@ jobs:
           fingerprints:
             - "2a:19:7a:b4:84:85:92:13:f6:f3:9e:e2:be:bf:2a:99"
             
-      - run: cat ~/.ssh/known_hosts
+      - run: ssh-keyscan petersonryan.com
       - run: ssh deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
 
 workflows:
