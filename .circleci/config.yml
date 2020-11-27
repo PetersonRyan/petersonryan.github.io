@@ -15,10 +15,9 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "dc:02:a1:3e:46:b5:34:99:54:c2:1e:1e:b1:c4:78:95"
+            - "ba:11:4b:2a:d5:89:b2:d9:be:8f:16:43:bb:a9:56:48"
             
-      - run: ssh-keyscan petersonryan.com
-      - run: ssh deploy@petersonryan.com -v "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
+      - run: ssh deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
 
 workflows:
   buildDocker:
