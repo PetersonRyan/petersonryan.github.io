@@ -24,9 +24,9 @@ workflows:
     jobs:
       - build_docker
       - deploy:
-        requires:
-          - build_docker
-        filters:
-          branches:
-            only:
-              - master
+          requires:
+            - build_docker
+          filters:
+            branches:
+              only:
+                - master
