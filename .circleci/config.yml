@@ -17,7 +17,7 @@ jobs:
           fingerprints:
             - "69:ac:bf:c2:3f:6a:cf:5b:62:26:3f:16:60:72:cf:c5"
 
-      - run: ssh -t deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
+      - run: ssh deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
 
 workflows:
   buildDocker:
