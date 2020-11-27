@@ -15,8 +15,9 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "69:ac:bf:c2:3f:6a:cf:5b:62:26:3f:16:60:72:cf:c5"
-
+            - "2a:19:7a:b4:84:85:92:13:f6:f3:9e:e2:be:bf:2a:99"
+            
+      - run: cat ~/.ssh/known_hosts
       - run: ssh deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
 
 workflows:
