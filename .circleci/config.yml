@@ -9,7 +9,24 @@ jobs:
       - run: docker login -u petersonryan -p $DOCKERHUB_ACCESS_KEY
       - run: docker push petersonryan/website:$CIRCLE_SHA1
 
+  deploy:
+    machine: true
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "69:ac:bf:c2:3f:6a:cf:5b:62:26:3f:16:60:72:cf:c5"
+
+      - run: ssh -t deploy@petersonryan.com "sh /home/deploy/scripts/website.sh $CIRCLE_SHA1"
+
 workflows:
   buildDocker:
     jobs:
       - build_docker
+      - deploy:
+          requires:
+            - build_docker
+          filters:
+            branches:
+              only:
+                - master
