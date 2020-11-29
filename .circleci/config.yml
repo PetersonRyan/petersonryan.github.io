@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build_docker:
+  build_docker: 
     machine: true
 
     steps:
